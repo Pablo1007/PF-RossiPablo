@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#sitiosOficiales {
+    background-color: black;
+    width: 100vw;
+    height: 22px;
+}
+
+.sitiosOficialesTexto {
+    height: 100%;
+    width: 40vw;
+    color: white;
+    display: inline-block;
+}
+
+.sitiosOficialesTexto p {
+    font-size: 1rem;
+    padding: 1px 0px 1px 10px;
+}
+
+.sitiosOficialesRedes {
+    height: 100%;
+    width: 40vw;
+    float: right;
+    padding: 0px 20px 0px 0px;
+}
+
+.sitiosOficialesRedes img {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding: 0px 2px;
+}
+
+#barraNavegacion {
+    width: 100vw;
+    height: 130px;
+    background: linear-gradient(left, blue, white);
+    font-size: 0;
+    position: relative;
+}
+
+#barraNavegacion img {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    padding-left: 50px;
+}
+
+#barraNavegacion nav ul {
+    padding-top: 34px;
+    position: absolute;
+    left: 0;
+    margin-left: 150px;
+}
+
+#barraNavegacion nav ul li {
+    background-color: rgba(255, 255, 255, 0.308);
+    margin-left: 3vw;
+    width: 10vw;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+
+nav ul li a {
+    display: block;
+    margin: auto;
+    font-size: 1em;
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:hover {
+    background: linear-gradient(rgba(0, 128, 0, 0.541), white);
+
+}
+
+footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 0;
+}
+
+.footerDescripcion {
+    height: 100%;
+    width: 33vw;
+    float: left;
+    font-size: 16px;
+}
+
+.footerContacto {
+    height: 100%;
+    width: 34vw;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.footerRedes {
+    height: 100%;
+    width: 33vw;
+    float: right;
+    font-size: 16px;
+}
+
+footer div ul {
+    display: block;
+}
+
+
+footer div ul li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 16px;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 0px 0px 5px 10px;
+}
+
+footer div ul li a:hover {
+    color: rgba(0, 128, 0, 0.541);
+
+}
+
+footer div b {
+    display: block;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+footer div hr {
+    display: block;
+    color: white;
+    width: 40%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+footer div p {
+    font-size: 16px;
+    padding: 0px 10vw 0px 10px;
+    padding-left: 10px;
+}
