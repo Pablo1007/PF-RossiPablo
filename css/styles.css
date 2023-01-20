@@ -8,239 +8,499 @@
     margin: 0;
 }
 
+#bodyIndex {
+    background-image: url(../images/Fondo\ index.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+
+}
+
+/* header */
+
 header {
     width: 100vw;
     height: 150px;
-    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas:
+        "sitios"
+        "barra";
+}
+
+/* header con fondo blanco para html interno */
+
+.fondoHeader{
     background-color: white;
-    top: 0px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
+
+/* barra superior con las redes sociales */
+
 #sitiosOficiales {
-    background-color: black;
-    width: 100vw;
-    height: 22px;
+    width: 100%;
+    grid-area: sitios;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "texto redes";
+    align-items: center;
 }
 
 .sitiosOficialesTexto {
-    height: 100%;
-    width: 40vw;
-    color: white;
-    display: inline-block;
-}
-
-.sitiosOficialesTexto p {
-    font-size: 1rem;
-    padding: 1px 0px 1px 10px;
+    padding-left: 15px;
+    grid-area: texto;
+    align-items: center;
 }
 
 .sitiosOficialesRedes {
-    height: 100%;
-    width: 40vw;
-    float: right;
-    padding: 0px 20px 0px 0px;
+    padding-right: 15px;
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 .sitiosOficialesRedes img {
     width: 20px;
     height: 20px;
-    float: right;
     padding: 0px 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+
+/* barra de navegacion de la pagina */
 
 #barraNavegacion {
-    width: 100vw;
-    height: 130px;
-    background: linear-gradient(left, blue, white);
-    font-size: 0;
-    position: relative;
+    width: 100%;
+    grid-area: barra;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "logo nav";
+    align-items: center;
 }
 
-#barraNavegacion img {
-    height: 90%;
+#barraNavegacion div {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+#barraNavegacion div img {
+    height: 90px;
     width: auto;
-    position: absolute;
-    padding-left: 50px;
+}
+
+#barraNavegacion nav {
+    grid-area: nav;
 }
 
 #barraNavegacion nav ul {
-    padding-top: 34px;
-    position: absolute;
-    left: 0;
-    margin-left: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-#barraNavegacion nav ul li {
-    background-color: rgba(255, 255, 255, 0.308);
-    margin-left: 3vw;
-    width: 10vw;
+nav ul li {
     list-style: none;
-    display: inline-block;
-    font-size: 1.5vw;
+
 }
 
 nav ul li a {
-    display: block;
-    margin: auto;
-    font-size: 1em;
-    padding: 20px 0px 20px 0px;
-    border-radius: 10px;
-    text-align: center;
     text-decoration: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(0, 0, 0);
+    transition: all 1s;
+
 }
 
 nav ul li a:hover {
-    background: linear-gradient(rgba(0, 128, 0, 0.541), white);
-
+    background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
+    color: white;
+    width: 170px;
+    height: 70px;
+    margin: -10px;
 }
 
-footer {
-    height: 30vh;
+/* main del inicio */
+
+#mainIndex {
     width: 100vw;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas:
+        "contactate contactate"
+        "mainTexto mainFotos";
+}
+
+.mainContactate {
+    grid-area: contactate;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainTexto {
+    grid-area: mainTexto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.colorFondo{
+    background-color: rgb(219, 219, 219);
+}
+
+.mainTextoDiv{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 50px;
+}
+
+.mainTextoTitulo{
+    padding: 20px 0px;
+    font-size: 1.25rem;
+}
+
+.mainTextoCuerpo{
+    font-size: 1rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.mainFotos {
+    grid-area: mainFotos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.mainFotosChicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* boton del index contactate */
+
+.boton a {
     text-decoration: none;
-    font-size: 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.651);
+    transition: all 1s;
+}
+
+.boton a:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    width: 170px;
+    height: 70px;
+    margin: -10px;
+}
+
+/* texto sobre el boton del contactate */
+
+.mainContactateH {
+    font-size: 1.5rem;
+    color: black;
+    padding: 0px 10%;
+    text-align: center;
+}
+
+/* fotos inicio */
+
+.foto1 {
+    width: 60%;
+    height: auto;
+}
+
+.foto2 {
+    width: 20%;
+    height: auto;
+}
+
+.foto3 {
+    width: 20%;
+    height: auto;
+    padding: 0px 10px;
+}
+
+.foto4 {
+    width: 20%;
+    height: auto;
+}
+
+.bordeRedondo{
+    border-radius: 25px;
+}
+
+                                    /* footer de todas los html del sitio */
+
+footer {
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "descripcion contacto redes";
+    padding: 10px;
 }
 
 .footerDescripcion {
-    height: 100%;
-    width: 33vw;
-    float: left;
-    font-size: 16px;
+    grid-area: descripcion;
 }
 
 .footerContacto {
-    height: 100%;
-    width: 34vw;
-    display: inline-block;
-    font-size: 16px;
+    grid-area: contacto;
 }
 
 .footerRedes {
-    height: 100%;
-    width: 33vw;
-    float: right;
-    font-size: 16px;
+    grid-area: redes;
 }
 
-footer div ul {
-    display: block;
+.linea {
+    width: 50%;
+    margin: 10px 0px;
 }
-
 
 footer div ul li {
     list-style: none;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 16px;
+    padding: 5px 0px;
 }
 
 footer div ul li a {
     text-decoration: none;
-    display: block;
     color: white;
-    padding: 0px 0px 5px 10px;
 }
 
 footer div ul li a:hover {
     color: rgba(0, 128, 0, 0.541);
-
 }
 
-footer div b {
-    display: block;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
-}
 
-footer div hr {
-    display: block;
-    color: white;
-    width: 40%;
-    margin-left: 10px;
-    margin-bottom: 10px;
 
-}
+                                        /* estilos del html: beneficios */
 
-footer div p {
-    font-size: 16px;
-    padding: 0px 10vw 0px 10px;
-    padding-left: 10px;
-}
-
-#indexBody {
+#bodyBeneficios {
     width: 100vw;
-    overflow-x: hidden;
 }
 
-main {
-    height: 110vh;
-    background: linear-gradient(rgba(0, 128, 0, 0.541), white);
+#mainBeneficios {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tituloVideo {
+    padding: 20px 0px 50px 0px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.video {
+    text-align: center;
+}
+
+                                        /* estilos del html: Contacto */
+
+#bodyContacto {
+    width: 100vw;
+    text-align: center;
+}
+
+#mainContacto h2 {
+    font-size: 2em;
+    padding: 25px 0px;
+}
+
+form input {
+    padding: 2px 0px;
+    margin: 5px 0px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.541);
+    padding: 20px;
+    margin: 0px 30vw 20px 30vw;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+
+                                        /* estilos del html: Nosotros */
+
+#mainNosotros{
+    padding: 20px 0px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "colegio"
+        "facultad"
+        "empresa";
+
+}
+#colegio{
+    grid-area:colegio;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "colegioTexto colegioImagen";
+}
+
+.colegioTexto{
+    grid-area: colegioTexto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    text-align: center;
+}
+.colegioImagen{
+    grid-area: colegioImagen;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#facultad{
+    grid-area:facultad;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "facultadImagen facultadTexto";
+}
+
+.facultadTexto{
+    grid-area: facultadTexto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    text-align: center;
+}
+.facultadImagen{
+    grid-area: facultadImagen;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#empresa{
+    grid-area:empresa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "empresaTexto empresaImagen";
+}
+
+.empresaTexto{
+    grid-area: empresaTexto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    text-align: center;
+}
+.empresaImagen{
+    grid-area: empresaImagen;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section div img {
+    height: 250px;
+    width: auto;
+}
+
+.espacioTitulo{
+    font-size: 1.5rem;
+    padding: 25px 0px;
+}
+
+                                        /* estilos del html: Productos */
+
+#bodyProductos {
+    width: 100vw;
+}
+
+
+
+#mainProductos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+
+}
+.producto{
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.571);
+
+}
+
+.producto img {
     padding-top: 20px;
-    font-family: Roboto;
-}
-
-.mainTexto {
-    height: 100%;
-    width: 50vw;
-    float: left;
-}
-
-.mainTexto b {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    padding: 50px 0px;
-}
-
-.mainTexto p {
-    padding: 0px 2vw;
-    text-align: center;
-    font-size: 20px;
-    line-height: 35px;
-}
-
-.mainFotos {
-    height: 100%;
-    width: 50vw;
-    float: right;
-}
-
-.foto1 {
-    padding-top: 40px;
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.mainFotos div {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.foto2 {
-
-    width: 25%;
-    height: auto;
-    padding-right: 6px;
-}
-
-.foto3 {
-
-    width: 25%;
-    height: auto;
-    padding-right: 6px;
-    padding-left: 6px;
-}
-
-.foto4 {
-    width: 25%;
-    height: auto;
-    padding-left: 6px;
+    height: 120px;
+    width: auto;
 }
