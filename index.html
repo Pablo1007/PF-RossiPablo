@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>SR RENOVABLE ENERGY</title>
 </head>
-<body id="indexBody">
+<body id="bodyIndex">
     <header>
         <section id="sitiosOficiales">
             <div class="sitiosOficialesTexto">
@@ -27,7 +27,9 @@
             </div>
         </section>
         <section id="barraNavegacion">
-            <img src="./images/Logo SR/Logo SR renewables.png" alt="Generacion solar">
+            <div class="logo">
+                <img src="./images/Logo SR/Logo SR renewables.png" alt="Generacion solar">
+            </div>
             <nav>
                 <ul>
                     <li><a href="./index.html">INICIO</a></li>
@@ -39,10 +41,15 @@
             </nav>
         </section>
     </header>
-    <main id="indexMain">
-        <section class="mainTexto">
+    <main id="mainIndex">
+        <div class="mainContactate">
+            <h2 class="mainContactateH">Queres tener propia generacion en tu casa, contactate con nosotros y te vamos asesorar en un proyecto completo. Desde dimensionamiento, hasta puesta en marcha.</h2>
+            <div class="boton"><a href="./pages/contacto.html">Contactate</a></div>
+        </div>
+        <section class="mainTexto colorFondo">
+            <div class="mainTextoDiv">
             <b class="mainTextoTitulo">¿Que es la energía solar?</b>
-            <p class="mainTextocuerpo">
+            <p class="mainTextoCuerpo">
                 La energía solar es una energía renovable, obtenida a partir del aprovechamiento de la radiación
                 electromagnética
                 procedente del Sol. La radiación solar que alcanza la Tierra ha sido aprovechada por el ser humano desde
@@ -51,32 +58,35 @@
                 aprovecharse
                 por medio de diversos captadores como células fotoeléctricas.
             </p>
+            </div>
+            <div class="mainTextoDiv">
             <b class="mainTextoTitulo">¿Queres generar tu propia energía?</b>
-            <p class="mainTextocuerpo">
+            <p class="mainTextoCuerpo">
                 Para generar tu propia energía necesitas un kit solar dimensionado a tu necesitadad, el cual
                 va a contener paneles solares, estructuras para suspension de los mismo, inversor (equipo que
                 convierte la energia solar en energia electrica), protecciones y cables de conexion.
             </p>
+            </div>
         </section>
-        <section class="mainFotos">
-            <img class="foto1" src="./images/Inicio/Paneles en Techo plano.jpeg" alt="">
+        <section class="mainFotos colorFondo">
+            <img class="foto1 bordeRedondo" src="./images/Inicio/Paneles en Techo plano.jpeg" alt="">
             <div class="mainFotosChicas">
-                <img class="foto2" src="./images/Inicio/Paneles en techo inclinado.jpeg" alt="">
-                <img class="foto3" src="./images/Inicio/Inversor.jpeg" alt="">
-                <img class="foto4" src="./images/Inicio/Protecciones.jpeg" alt="">
+                <img class="foto2 bordeRedondo" src="./images/Inicio/Paneles en techo inclinado.jpeg" alt="">
+                <img class="foto3 bordeRedondo" src="./images/Inicio/Inversor.jpeg" alt="">
+                <img class="foto4 bordeRedondo" src="./images/Inicio/Protecciones.jpeg" alt="">
             </div>
         </section>
     </main>
     <footer>
         <div class="footerDescripcion">
             <b>SR Renewable</b>
-            <hr>
+            <hr class="linea">
             <p>Somos una empresa dedicada al dimensionamiento, instalación y supervisión de obra de equipos de
                 generación eléctrica solares.</p>
         </div>
         <div class="footerContacto">
             <b>Contacto</b>
-            <hr>
+            <hr class="linea">
             <ul>
                 <li><a href="https://wa.me/3415698981" target="_blank">+341-5698981 - Ing Rossi Pablo</a></li>
                 <li><a href="https://wa.me/3413133608" target="_blank">+341-3133608 - Ing Seisas Matias</a></li>
@@ -85,7 +95,7 @@
         </div>
         <div class="footerRedes">
             <b>Redes sociales</b>
-            <hr>
+            <hr class="linea">
             <ul>
                 <li><a href="https://www.instagram.com/srrenewableenergy/" target="_blank">Instagram -
                         @srrenewableenergy</a></li>
