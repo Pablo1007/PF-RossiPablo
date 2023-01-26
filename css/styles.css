@@ -11,3 +11,7 @@
 footer{
     height: 200px;
 }
+
+footer div div hr{
+    margin-top: 0 !important;
+}
