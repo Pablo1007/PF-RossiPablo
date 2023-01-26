@@ -18,3 +18,15 @@ footer div div hr{
 footer div div ul li a:hover {
     color: rgb(125, 255, 125) !important;
 }   
+
+header{
+    height: 130px;
+}
+
+header section div a img{
+    height: 20px;
+    width: 20px;
+}
+header section div a{
+padding: 0px 3px;
+}
