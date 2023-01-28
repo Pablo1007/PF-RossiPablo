@@ -101,12 +101,33 @@
 <!-- imagenes de equipos solares -->
 
             <section class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="foto1 bordeRedondo" width="80%" height="auto"; src="./images/Inicio/Paneles en Techo plano.jpeg" alt="">
-                <div class="d-flex justify-content-center align-items-center pt-3">
-                    <img class="foto2 bordeRedondo" width="20%" height="auto" src="./images/Inicio/Paneles en techo inclinado.jpeg" alt="">
-                    <img class="foto3 bordeRedondo mx-5" width="20%" height="auto" src="./images/Inicio/Inversor.jpeg" alt="">
-                    <img class="foto4 bordeRedondo" width="20%" height="auto" src="./images/Inicio/Protecciones.jpeg" alt="">
-                </div>
+
+<!-- Carrusel de imagenes -->
+                
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/Inicio/Paneles en Techo plano.jpeg" class="d-block w-100" alt="Panel solar">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/Inicio/Paneles en techo inclinado.jpeg" class="d-block w-100" alt="Panel solar">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/Inicio/Inversor.jpeg" class="d-block w-100" alt="Inversor">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/Inicio/Protecciones.jpeg" class="d-block w-100" alt="Protecciones">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> 
             </section>
         </div>
     </main>
@@ -143,7 +164,7 @@
                 <b class="m-0">Redes sociales</b>
                 <hr width="70%">
                 <ul class="list-unstyled">
-                    <li><a href="https://www.instagram.com/srrenewableenergy/" target="_blank" class="text-decoration-none  text-white hover-shadow">Instagram -
+                    <li><a href="https://www.instagram.com/srrenewableenergy/" target="_blank" class="text-decoration-none  text-white">Instagram -
                             @srrenewableenergy</a></li>
                     <li><a href="https://www.facebook.com/srrenewableenergy" target="_blank" class="text-decoration-none  text-white">Facebook -
                             @srrenewableenergy</a></li>
@@ -152,6 +173,9 @@
             </div>
         </div>
     </footer>
+    <div class="position-fixed p-3 bottom-0 end-0">
+        <a href="https://wa.me/3415698981"><img class="prueba"src="./images/Sitiosoficiales/Whatsapp.png" alt="Generacion solar" height="90px" width="auto"></a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -36,11 +36,11 @@
 
 <!-- barra de navegacion -->
 
-        <section class="row h-75">
+<section class="row h-75  bg-white shadow border-bottom fondoBarra">
 
 <!-- logo -->
 
-            <div class="col-12 col-lg-2 d-flex justify-content-center">
+            <div class="col-12 col-lg-2 d-flex justify-content-center radiusFondo">
                 <img src="../images/Logo SR/Logo SR renewables.png" alt="Generacion solar" height="90px" width="auto">
             </div>
 
@@ -67,21 +67,105 @@
 
 <!-- main -->
 
-    <main id="mainProductos">
+    <main class="container-fluid h-auto pt-2 ">
 
-
-        <div class="card" style="width: 18rem;">
-            <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
-            <div class="card-body"> 
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 d-flex justify-content-center py-1 my-3 fondoTitulo">
+                <b class="h2 m-0">Nuestros productos</b>
             </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-around align-items-center flex-wrap">
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Panel solar 295w</h5>
+                    <p class="card-text">Panel generador de energia solar, es el encargado de convertir el la luz solar en energia electrica</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Consultar disponibilidad</button>
+
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Inversor 5kW</h5>
+                    <p class="card-text">Inversor de 5kW es el encargado de convertir la energia continua en alterna</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Inversor 3kW</h5>
+                    <p class="card-text">Inversor de 3kW es el encargado de convertir la energia continua en alterna</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Inversor 1,5kW</h5>
+                    <p class="card-text">Inversor de 1,5kW es el encargado de convertir la energia continua en alterna</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Soporte techo plano</h5>
+                    <p class="card-text">Estructura para soporte de panel en techo plano</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Soporte techo inclinado</h5>
+                    <p class="card-text">Estructura para soporte de panel en techo inclinado</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="p-2 m-4 card bordeRedondo" style="width: 18rem;">
+                    <img src="../images/Productos/Panel solar.png" alt="panel-solar" class="card-img-top" alt="panel solar">
+                    <div class="card-body"> 
+                    <h5 class="card-title">Protecciones</h5>
+                    <p class="card-text">Las protecciones son las que protegen a la persona de las fallas</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- lógica de boton modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo mensaje</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Número de contacto:</label>
+            <input type="number" class="form-control" id="recipient-name">
           </div>
-
-
-
-
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+</div>
 
             <!-- <div class="productoUno producto">
                 <b>Panel Solar</b>
@@ -171,6 +255,9 @@
             </div>
         </div>
     </footer>
+    <div class="position-fixed p-3 bottom-0 end-0">
+        <a href="https://wa.me/3415698981"><img class="prueba"src="../images/Sitiosoficiales/Whatsapp.png" alt="Generacion solar" height="90px" width="auto"></a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
