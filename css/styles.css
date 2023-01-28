@@ -7,10 +7,7 @@
     padding: 0;
     margin: 0;
 }
-
-footer{
-    height: 200px;
-}
+/* configuraciones footer */
 
 footer div div hr{
     margin-top: 0 !important;
@@ -19,14 +16,107 @@ footer div div ul li a:hover {
     color: rgb(125, 255, 125) !important;
 }   
 
-header{
-    height: 130px;
+/* Hover de los botones de nav */
+
+nav ul li a {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0));
+    transition: all 1s;
 }
 
-header section div a img{
-    height: 20px;
-    width: 20px;
+nav ul li a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
+    width: 170px;
+    height: 70px;
+    margin: -10px;
 }
-header section div a{
-padding: 0px 3px;
+
+/* hover del boton de contactate */
+
+.boton a {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.651);
+    transition: all 1s;
+}
+
+.boton a:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    width: 160px;
+    height: 60px;
+    margin: -10px;
+}
+
+/* imagen de fondo del body */
+
+#bodyIndex {
+    background-image: url(../images/Fondo\ index.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+}
+
+#bodyContacto {
+    background-image: url(../images/Fondo\ contacto.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+}
+
+
+/* bordes redondos de las imagenes de main */
+
+.bordeRedondo{
+    border-radius: 25px;
+}
+
+/* color de fondo del main */
+
+.colorFondo{
+    background-color: rgb(219, 219, 219);
+}
+
+/* los mediaquery de adaptacion a pantallas */
+
+@media (max-width: 576px) {
+    #bodyIndex {
+        background-image: url(../images/Fondo\ index\ 576.jpg)!important;
+    }
+    .h5, h5 {
+        font-size: 0.75rem!important;
+    }
+    .h6, h6 {
+        font-size: 0.75rem!important;
+    }
+   .bajarForm{
+        flex-direction: column;
+        
+   }
+    }
+
+
+ @media (max-width: 767px) {
+    #bodyIndex {
+        background-image: url(../images/Fondo\ index\ 768.jpg);
+   
+    }  
+    nav ul li a {
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.616);
+        transition: all 1s;
+    }
+    
+    nav ul li a:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
+        width: 150px;
+        height: 50px;
+    }
+    }
+
+.fondoTitulo{
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 66%, rgba(0,212,255,0) 100%);
 }
