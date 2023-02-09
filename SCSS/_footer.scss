@@ -1,0 +1,18 @@
+footer {
+    div {
+        div{
+            ul{
+                li{
+                    a{
+                        &:hover{
+                        color: $color-verde !important;
+                        }
+                    }
+                }
+            }
+             hr{
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

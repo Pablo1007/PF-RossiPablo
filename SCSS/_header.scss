@@ -1,0 +1,41 @@
+header{
+    // section{
+    //      div{
+    //          p{}
+    //      }
+    //      div{
+    //          a{}
+    //      }
+    //  }
+    section{
+        // div{
+        //     img{}
+        // }
+        nav{
+            // div{
+            //     button{
+            //         span{}
+            //     }
+            div{
+                ul{
+                    li{
+                        a{
+                            width: 150px;
+                            height: 50px;
+                            border-radius: 10px;
+                            background: linear-gradient(rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0));
+                            transition: all 1s;
+                            &:hover{
+                                background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
+                                width: 170px;
+                                height: 70px;
+                                margin: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

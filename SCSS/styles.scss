@@ -1,0 +1,130 @@
+@import "./variables";
+@import "./tipografias";
+@import "./header";
+@import "./footer";
+@import "./Index/index.scss";
+@import "./Nosotros/nosotros.scss";
+@import "./Beneficios/beneficios.scss";
+@import "./Productos/productos.scss";
+@import "./Contacto/contacto";
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.anchoI{
+    width: 100px;
+}
+
+// logo whatsapp flotante en todas las web
+
+.wFlotante{
+    &:hover {
+    background: radial-gradient(circle, rgba(125, 255, 125, 1) 0%, rgba(125, 255, 125, 0.5) 60%, rgba(125, 255, 125, 0) 90%);
+    }
+}
+
+// imagen de fondo barra de navegacion interna
+
+.fondoBarra {
+    background-image: url(../images/Fondos/fondo_barra.jpg);
+    background-repeat: repeat-x;
+}
+
+// bordes redondos de las imagenes de main
+
+.bordeRedondo {
+    border-radius: 25px !important;
+}
+
+// color de fondo del main
+
+.colorFondo {
+    background-color: rgb(219, 219, 219);
+}
+
+// radio del fondo de logo
+
+.radiusFondo {
+
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+// fondo degradado de titulos html
+
+.fondoTitulo {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 1) 36%, rgba(255, 255, 255, 1) 66%, rgba(0, 212, 255, 0) 100%);
+}
+
+.navbar-toggler {
+    background-color: #ffffffab !important;
+}
+
+// los mediaquery de adaptacion a pantallas
+
+@media (max-width: 576px) {
+    #bodyIndex {
+        background-image: url(../images/Fondos/fondo_index_576.jpg) !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 0.75rem !important;
+    }
+
+    .h6,
+    h6 {
+        font-size: 0.75rem !important;
+    }
+
+    .bajarForm {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    nav {
+        ul{
+            li{
+                a {
+                    width: 100vw;
+                    border-radius: 0px;
+                    background: rgba(255, 255, 255, 0.616);
+                    transition: all 1s;
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
+                        width: 100vw;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        --bs-btn-bg: #0e9329 !important;
+        --bs-btn-border-color: #0e9329 !important;
+        --bs-btn-hover-bg: #7c7c7c !important;
+        --bs-btn-hover-border-color: #0e9329 !important;
+        --bs-btn-active-bg: #0e9329 !important;
+        --bs-btn-active-border-color: #0e9329 !important;
+        --bs-btn-disabled-bg: #0e9329 !important;
+        --bs-btn-disabled-border-color: #0e9329 !important
+    }
+
+    .navbar-nav {
+        padding: 0 !important;
+    }
+
+    #bodyIndex{
+        background-image: url(../images/Fondos/fondo_index_768.jpg);
+    }
+}

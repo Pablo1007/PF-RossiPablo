@@ -1,0 +1,33 @@
+#bodyIndex{
+    background-image: url(../images/Fondos/fondo_index.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    main{
+        div{
+            .boton{
+                a {
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.651);
+                    transition: all 1s;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.466);
+                        color: white;
+                        width: 160px;
+                        height: 60px;
+                        margin: -10px;
+                    }
+                }
+            }
+            
+        }
+        div{
+            div{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
