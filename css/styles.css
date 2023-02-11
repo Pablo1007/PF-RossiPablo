@@ -2,12 +2,12 @@
   font-family: "roboto";
   src: url(../fonts/Roboto-Italic.ttf); }
 
+.roboto {
+  font-family: "roboto"; }
+
 @font-face {
   font-family: "bee";
   src: url(../fonts/BreeSerif-Regular.ttf); }
-
-.roboto {
-  font-family: "roboto"; }
 
 .bee {
   font-family: "bee"; }
@@ -25,7 +25,7 @@ header section nav div ul li a {
     margin: -10px; }
 
 footer div div ul li a:hover {
-  color: #7dff7d !important; }
+  color: #479847 !important; }
 
 footer div div hr {
   margin-top: 0 !important; }
@@ -49,6 +49,86 @@ footer div div hr {
   #bodyIndex main div div p {
     font-size: 1rem; }
 
+@media (min-width: 1200px) {
+  main .pad {
+    padding: 100px 0px; }
+    main .pad div {
+      padding: 100px 0px; } }
+
+@media (max-width: 767px) {
+  #bodyIndex {
+    background-image: url(../images/Fondos/fondo_index_768.jpg); } }
+
+@media (max-width: 576px) {
+  #bodyIndex {
+    background-image: url(../images/Fondos/fondo_index_576.jpg) !important; }
+    #bodyIndex main div h5 {
+      font-size: 0.75rem !important; }
+    #bodyIndex header section div p {
+      font-size: 0.75rem; } }
+
+#bodyNosotros header {
+  background-image: url(../images/Nosotros/nosotros.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+@media (max-width: 576px) {
+  #bodyNosotros header {
+    background-image: url(../images/Nosotros/nosotros576.jpeg); } }
+
+#bodyBeneficios header {
+  background-image: url(../images/beneficios/beneficios.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#bodyBeneficios main div div img {
+  height: 200px;
+  width: auto; }
+
+#bodyBeneficios main div div h5 {
+  padding-top: 30px; }
+
+#bodyBeneficios main div iframe {
+  padding-bottom: 40px; }
+
+#bodyProductos header {
+  background-image: url(../images/Productos/productos.png);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#bodyContacto header {
+  background-image: url(../images/contacto/contacto.png);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#bodyContacto main div div div div img {
+  height: 150px;
+  width: auto; }
+
+#bodyContacto main div div div div h4 {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 1.5rem; }
+
+@media (max-width: 576px) {
+  #bodyContacto header {
+    background-image: url(../images/contacto/contacto576.png); } }
+
+@media (max-width: 992px) {
+  #bodyContacto main {
+    padding: 0px 0px 20px 0px; }
+    #bodyContacto main div div div {
+      flex-direction: column; }
+      #bodyContacto main div div div .pri {
+        order: 1; }
+      #bodyContacto main div div div .seg {
+        order: 2; }
+        #bodyContacto main div div div .seg h4 {
+          text-align: center;
+          padding-bottom: 10px; }
+      #bodyContacto main div div div div img {
+        margin: 15px 0px; } }
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Italic.ttf); }
@@ -63,34 +143,13 @@ footer div div hr {
 .wFlotante:hover {
   background: radial-gradient(circle, #7dff7d 0%, rgba(125, 255, 125, 0.5) 60%, rgba(125, 255, 125, 0) 90%); }
 
-.fondoBarra {
-  background-image: url(../images/Fondos/fondo_barra.jpg);
-  background-repeat: repeat-x; }
-
 .bordeRedondo {
   border-radius: 25px !important; }
-
-.colorFondo {
-  background-color: #dbdbdb; }
-
-.radiusFondo {
-  background: radial-gradient(circle, white 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); }
-
-.fondoTitulo {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, white 36%, white 66%, rgba(0, 212, 255, 0) 100%); }
 
 .navbar-toggler {
   background-color: #ffffffab !important; }
 
 @media (max-width: 576px) {
-  #bodyIndex {
-    background-image: url(../images/Fondos/fondo_index_576.jpg) !important; }
-  .h5,
-  h5 {
-    font-size: 0.75rem !important; }
-  .h6,
-  h6 {
-    font-size: 0.75rem !important; }
   .bajarForm {
     flex-direction: column; } }
 
@@ -104,17 +163,5 @@ footer div div hr {
       background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
       width: 100vw;
       height: 70px; }
-  .btn-primary {
-    --bs-btn-bg: #0e9329 !important;
-    --bs-btn-border-color: #0e9329 !important;
-    --bs-btn-hover-bg: #7c7c7c !important;
-    --bs-btn-hover-border-color: #0e9329 !important;
-    --bs-btn-active-bg: #0e9329 !important;
-    --bs-btn-active-border-color: #0e9329 !important;
-    --bs-btn-disabled-bg: #0e9329 !important;
-    --bs-btn-disabled-border-color: #0e9329 !important
-    ; }
   .navbar-nav {
-    padding: 0 !important; }
-  #bodyIndex {
-    background-image: url(../images/Fondos/fondo_index_768.jpg); } }
+    padding: 0 !important; } }

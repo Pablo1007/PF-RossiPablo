@@ -1,0 +1,14 @@
+#bodyNosotros{
+    header{
+    background-image: url(../images/Nosotros/nosotros.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+}
+@media (max-width: 576px) {
+    #bodyNosotros{
+        header{
+        background-image: url(../images/Nosotros/nosotros576.jpeg);
+        }
+    }
+}

@@ -31,3 +31,42 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    main{
+        .pad{
+            padding: 100px 0px;
+            div{
+                padding: 100px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #bodyIndex{
+        background-image: url(../images/Fondos/fondo_index_768.jpg);
+    }
+}
+
+@media (max-width: 576px) {
+    #bodyIndex {
+        background-image: url(../images/Fondos/fondo_index_576.jpg) !important;
+        main{
+            div{
+                h5{
+                    font-size: 0.75rem !important;
+                }
+            }
+        }
+        header{
+            section{
+                div{
+                    p{
+                        font-size: 0.75rem;                        
+                    }
+                }
+            }
+        }
+    }
+}

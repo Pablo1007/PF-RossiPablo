@@ -30,37 +30,13 @@
     }
 }
 
-// imagen de fondo barra de navegacion interna
-
-.fondoBarra {
-    background-image: url(../images/Fondos/fondo_barra.jpg);
-    background-repeat: repeat-x;
-}
-
 // bordes redondos de las imagenes de main
 
 .bordeRedondo {
     border-radius: 25px !important;
 }
 
-// color de fondo del main
-
-.colorFondo {
-    background-color: rgb(219, 219, 219);
-}
-
-// radio del fondo de logo
-
-.radiusFondo {
-
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-}
-
 // fondo degradado de titulos html
-
-.fondoTitulo {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 1) 36%, rgba(255, 255, 255, 1) 66%, rgba(0, 212, 255, 0) 100%);
-}
 
 .navbar-toggler {
     background-color: #ffffffab !important;
@@ -69,28 +45,12 @@
 // los mediaquery de adaptacion a pantallas
 
 @media (max-width: 576px) {
-    #bodyIndex {
-        background-image: url(../images/Fondos/fondo_index_576.jpg) !important;
-    }
-
-    .h5,
-    h5 {
-        font-size: 0.75rem !important;
-    }
-
-    .h6,
-    h6 {
-        font-size: 0.75rem !important;
-    }
-
     .bajarForm {
         flex-direction: column;
     }
 }
 
 @media (max-width: 767px) {
-
-
     nav {
         ul{
             li{
@@ -108,23 +68,7 @@
             }
         }
     }
-
-    .btn-primary {
-        --bs-btn-bg: #0e9329 !important;
-        --bs-btn-border-color: #0e9329 !important;
-        --bs-btn-hover-bg: #7c7c7c !important;
-        --bs-btn-hover-border-color: #0e9329 !important;
-        --bs-btn-active-bg: #0e9329 !important;
-        --bs-btn-active-border-color: #0e9329 !important;
-        --bs-btn-disabled-bg: #0e9329 !important;
-        --bs-btn-disabled-border-color: #0e9329 !important
-    }
-
     .navbar-nav {
         padding: 0 !important;
-    }
-
-    #bodyIndex{
-        background-image: url(../images/Fondos/fondo_index_768.jpg);
     }
 }

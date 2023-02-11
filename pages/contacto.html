@@ -39,11 +39,11 @@
 
         <!-- barra de navegacion -->
 
-        <section class="row h-75 bg-white shadow border-bottom fondoBarra">
+        <section class="row h-75 shadow border-bottom">
 
             <!-- logo -->
 
-            <div class="col-12 col-lg-2 d-flex justify-content-center radiusFondo">
+            <div class="col-12 col-lg-2 d-flex justify-content-center radiusFondo py-2">
                 <img src="../images/Logo SR/logo_sr_renewable.png" alt="Generacion solar" height="90px" width="auto">
             </div>
 
@@ -82,70 +82,133 @@
     </header>
     <main class="container-fluid h-auto py-3">
 
-        <!-- titulo de html -->
+        <!-- titulo del html -->
 
-        <div class="row d-flex justify-content-center">
-            <div class="col-10 d-flex justify-content-center py-1 my-3 fondoTitulo">
-                <b class="h2 m-0">Formulario de contacto</b>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-12 col-sm-3">
+                <hr>
+            </div>
+            <div class="col-12 col-sm-5 text-center py-sm-5 py-1">
+                <h2 class="roboto">FORMULARIO DE CONTACTO</h2>
+            </div>
+            <div class="col-12 col-sm-3">
+                <hr>
             </div>
         </div>
 
-        <!-- formulario -->
 
-        <form class="container-fluid" method="post">
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 col-md-8 col-lg-6 border bordeRedondo border-3 border-white p-4 bg-white">
+        <div class="row">
 
-                    <!-- Nombre y apellido -->
+            <!-- informacion general -->
 
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre y apellido</label>
-                        <div class="d-flex bajarForm">
-                            <input type="text" class="form-control me-2 " id="nombre" placeholder="Nombre">
-                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-                        </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
-                        <!-- correo -->
+                <!-- logo de destino -->
 
-                        <div class="pt-2 mb-3">
-                            <label for="correo" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="coreeo">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center">
+                        <img src="../images/contacto/Destino.png" alt="Simbolo de destino">
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
+                        <h4 class="roboto">San Luis 4335, Santa Fe, Rosario</h4>
+                    </div>
+                </div>
 
-                            <!-- telefono -->
+                <!-- logo de envio -->
 
-                            <div class="container-fluid p-0 mb-3 pt-2">
-                                <label for="area" class="form-label">Telefono</label>
-                                <div class="row d-flex bajarForm">
-                                    <div class="col-12 col-sm-4 p-0">
-                                        <input type="tel" class="form-control" id="area" placeholder="Area">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center seg">
+                        <h4 class="roboto">Se coordina sin cargo dentro de rosario</h4>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center pri">
+                        <img src="../images/contacto/Envio.png" alt="Simbolo de destino">
+                    </div>
+                </div>
+
+                <!-- logo de horarios -->
+
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center">
+                        <img src="../images/contacto/Horarios.png" alt="Simbolo de destino">
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
+                        <h4 class="roboto">Lunes a viernes de 8:00 a 17:00</h4>
+                    </div>
+                </div>
+                
+                <!-- logo de contacto -->
+
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center seg">
+                        <h4 class="roboto">341-5698981 Ing Pablo Rossi</h4>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center pri">
+                        <img src="../images/contacto/Whatsapp.png" alt="Simbolo de destino">
+                    </div>
+                </div>
+            </div>
+
+            <!-- formulario -->
+
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <form class="col-12" method="post">
+                    <div class="col-12 d-flex justify-content-center align-items-center border bordeRedondo colorFondo">
+                        <div class="col-11 bordeRedondo border-3 border-white p-4 bg-white">
+
+                            <!-- Nombre y apellido -->
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre y apellido</label>
+                                <div class="d-flex bajarForm">
+                                    <input type="text" class="form-control me-2 " id="nombre" placeholder="Nombre">
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                </div>
+
+                                <!-- correo -->
+
+                                <div class="pt-2 mb-3">
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="coreeo">
+
+                                    <!-- telefono -->
+
+                                    <div class="container-fluid p-0 mb-3 pt-2">
+                                        <label for="area" class="form-label">Telefono</label>
+                                        <div class="row d-flex bajarForm">
+                                            <div class="col-12 col-sm-4 p-0">
+                                                <input type="tel" class="form-control" id="area" placeholder="Area">
+                                            </div>
+                                            <div class="col-12 col-sm-8 p-0">
+                                                <input type="tel" class="form-control" id="telefono" placeholder="Telefono">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-sm-8 p-0">
-                                        <input type="tel" class="form-control" id="telefono" placeholder="Telefono">
+
+                                    <!-- quiero que me llamen -->
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Quiero que me llamen</label>
+                                    </div>
+
+                                    <!-- espacio para escribir consulta -->
+
+                                    <div class="row d-flex justify-content-center">
+                                        <textarea class="col-10  border rounded border-5 form-control" rows="10"></textarea>
+                                    </div>
+
+                                    <!-- boron de enviar -->
+
+                                    <div class="row pt-4">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- quiero que me llamen -->
-
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Quiero que me llamen</label>
-                            </div>
-
-                            <!-- espacio para escribir consulta -->
-
-                            <div class="row d-flex justify-content-center">
-                                <textarea class="col-10  border rounded border-5 form-control" rows="10"></textarea>
-                            </div>
-
-                            <!-- boron de enviar -->
-
-                            <div class="row pt-4">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                            </div>
                         </div>
                     </div>
-        </form>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- footer -->
@@ -197,7 +260,7 @@
         </div>
     </footer>
     <div class="position-fixed p-3 bottom-0 end-0">
-        <a href="https://wa.me/3415698981"><img class="wFlotante" src="../images/Sitiosoficiales/whatsapp.png"
+        <a href="https://wa.me/3415698981"><img class="wFlotante" src="../images/logowhatsapp.png"
                 alt="Generacion solar" height="90px" width="auto"></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
