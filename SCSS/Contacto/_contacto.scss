@@ -1,6 +1,6 @@
 #bodyContacto{
     header{
-    background-image: url(../images/contacto/contacto.png);
+    background-image: url(../assets/images/contacto/contacto.png);
     background-size: 100%;
     background-repeat: no-repeat;
     }
@@ -31,8 +31,11 @@
 @media (max-width: 576px) {
     #bodyContacto{
         header{
-        background-image: url(../images/contacto/contacto576.png);
+        background-image: url(../assets/images/contacto/contacto576.png);
         }
+    }
+    .bajarForm {
+        flex-direction: column;
     }
 }
 

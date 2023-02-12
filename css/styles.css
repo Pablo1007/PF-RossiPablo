@@ -24,6 +24,19 @@ header section nav div ul li a {
     height: 70px;
     margin: -10px; }
 
+.navbar-toggler {
+  background-color: #ffffffab !important; }
+
+@media (max-width: 767px) {
+  nav ul li a {
+    border-radius: 0px !important;
+    border: 1px #c3c3c3 solid;
+    background-color: white !important;
+    width: 100vw !important;
+    float: inline-start; }
+  .navbar-nav {
+    padding: 0 !important; } }
+
 footer div div ul li a:hover {
   color: #479847 !important; }
 
@@ -31,7 +44,7 @@ footer div div hr {
   margin-top: 0 !important; }
 
 #bodyIndex {
-  background-image: url(../images/Fondos/fondo_index.jpg);
+  background-image: url(../assets/images/Fondos/fondo_index.jpg);
   background-size: 100%;
   background-repeat: no-repeat; }
   #bodyIndex main div .boton a {
@@ -57,27 +70,27 @@ footer div div hr {
 
 @media (max-width: 767px) {
   #bodyIndex {
-    background-image: url(../images/Fondos/fondo_index_768.jpg); } }
+    background-image: url(../assets/images/Fondos/fondo_index_768.jpg); } }
 
 @media (max-width: 576px) {
   #bodyIndex {
-    background-image: url(../images/Fondos/fondo_index_576.jpg) !important; }
+    background-image: url(../assets/images/Fondos/fondo_index_576.jpg) !important; }
     #bodyIndex main div h5 {
       font-size: 0.75rem !important; }
     #bodyIndex header section div p {
       font-size: 0.75rem; } }
 
 #bodyNosotros header {
-  background-image: url(../images/Nosotros/nosotros.jpeg);
+  background-image: url(../assets/images/Nosotros/nosotros.jpeg);
   background-size: 100%;
   background-repeat: no-repeat; }
 
 @media (max-width: 576px) {
   #bodyNosotros header {
-    background-image: url(../images/Nosotros/nosotros576.jpeg); } }
+    background-image: url(../assets/images/Nosotros/nosotros576.jpeg); } }
 
 #bodyBeneficios header {
-  background-image: url(../images/beneficios/beneficios.jpg);
+  background-image: url(../assets/images/beneficios/beneficios.jpg);
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -92,12 +105,23 @@ footer div div hr {
   padding-bottom: 40px; }
 
 #bodyProductos header {
-  background-image: url(../images/Productos/productos.png);
+  background-image: url(../assets/images/Productos/productos.png);
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.bordeRedondo {
+  border-radius: 25px !important; }
+
+.btn-primary {
+  --bs-btn-bg: #479847 !important;
+  --bs-btn-border-color: #479847 !important;
+  --bs-btn-hover-bg: #aaaaaa !important;
+  --bs-btn-hover-border-color: #aaaaaa !important;
+  --bs-btn-active-bg: #aaaaaa !important;
+  --bs-btn-active-border-color: #aaaaaa !important; }
+
 #bodyContacto header {
-  background-image: url(../images/contacto/contacto.png);
+  background-image: url(../assets/images/contacto/contacto.png);
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -112,7 +136,9 @@ footer div div hr {
 
 @media (max-width: 576px) {
   #bodyContacto header {
-    background-image: url(../images/contacto/contacto576.png); } }
+    background-image: url(../assets/images/contacto/contacto576.png); }
+  .bajarForm {
+    flex-direction: column; } }
 
 @media (max-width: 992px) {
   #bodyContacto main {
@@ -129,39 +155,9 @@ footer div div hr {
       #bodyContacto main div div div div img {
         margin: 15px 0px; } }
 
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Italic.ttf); }
-
 * {
   padding: 0;
   margin: 0; }
 
-.anchoI {
-  width: 100px; }
-
 .wFlotante:hover {
   background: radial-gradient(circle, #7dff7d 0%, rgba(125, 255, 125, 0.5) 60%, rgba(125, 255, 125, 0) 90%); }
-
-.bordeRedondo {
-  border-radius: 25px !important; }
-
-.navbar-toggler {
-  background-color: #ffffffab !important; }
-
-@media (max-width: 576px) {
-  .bajarForm {
-    flex-direction: column; } }
-
-@media (max-width: 767px) {
-  nav ul li a {
-    width: 100vw;
-    border-radius: 0px;
-    background: rgba(255, 255, 255, 0.616);
-    transition: all 1s; }
-    nav ul li a:hover {
-      background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
-      width: 100vw;
-      height: 70px; }
-  .navbar-nav {
-    padding: 0 !important; } }

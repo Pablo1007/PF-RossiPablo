@@ -8,18 +8,9 @@
 @import "./Productos/productos.scss";
 @import "./Contacto/contacto";
 
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Italic.ttf);
-}
-
 * {
     padding: 0;
     margin: 0;
-}
-
-.anchoI{
-    width: 100px;
 }
 
 // logo whatsapp flotante en todas las web
@@ -27,48 +18,5 @@
 .wFlotante{
     &:hover {
     background: radial-gradient(circle, rgba(125, 255, 125, 1) 0%, rgba(125, 255, 125, 0.5) 60%, rgba(125, 255, 125, 0) 90%);
-    }
-}
-
-// bordes redondos de las imagenes de main
-
-.bordeRedondo {
-    border-radius: 25px !important;
-}
-
-// fondo degradado de titulos html
-
-.navbar-toggler {
-    background-color: #ffffffab !important;
-}
-
-// los mediaquery de adaptacion a pantallas
-
-@media (max-width: 576px) {
-    .bajarForm {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 767px) {
-    nav {
-        ul{
-            li{
-                a {
-                    width: 100vw;
-                    border-radius: 0px;
-                    background: rgba(255, 255, 255, 0.616);
-                    transition: all 1s;
-                    &:hover{
-                        background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0));
-                        width: 100vw;
-                        height: 70px;
-                    }
-                }
-            }
-        }
-    }
-    .navbar-nav {
-        padding: 0 !important;
     }
 }

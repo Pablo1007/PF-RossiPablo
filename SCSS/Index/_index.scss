@@ -1,5 +1,5 @@
 #bodyIndex{
-    background-image: url(../images/Fondos/fondo_index.jpg);
+    background-image: url(../assets/images/Fondos/fondo_index.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     main{
@@ -45,13 +45,13 @@
 
 @media (max-width: 767px) {
     #bodyIndex{
-        background-image: url(../images/Fondos/fondo_index_768.jpg);
+        background-image: url(../assets/images/Fondos/fondo_index_768.jpg);
     }
 }
 
 @media (max-width: 576px) {
     #bodyIndex {
-        background-image: url(../images/Fondos/fondo_index_576.jpg) !important;
+        background-image: url(../assets/images/Fondos/fondo_index_576.jpg) !important;
         main{
             div{
                 h5{

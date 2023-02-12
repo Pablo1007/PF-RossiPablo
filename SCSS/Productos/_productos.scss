@@ -1,7 +1,22 @@
 #bodyProductos{
     header{
-    background-image: url(../images/Productos/productos.png);
+    background-image: url(../assets/images/Productos/productos.png);
     background-size: 100%;
     background-repeat: no-repeat;
     }
+}
+
+// bordes redondos de las imagenes de main
+
+.bordeRedondo {
+    border-radius: 25px !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: #479847 !important;
+    --bs-btn-border-color: #479847 !important;
+    --bs-btn-hover-bg: #aaaaaa !important;
+    --bs-btn-hover-border-color: #aaaaaa !important;
+    --bs-btn-active-bg: #aaaaaa !important;
+    --bs-btn-active-border-color: #aaaaaa !important;
 }
