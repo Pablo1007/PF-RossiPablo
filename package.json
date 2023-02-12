@@ -7,9 +7,9 @@
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Pablo Adrian Rossi",
   "license": "ISC",
-  "description": "",
+  "description": "La pagina es para venta de equipamiento de generacion de energia solar",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
