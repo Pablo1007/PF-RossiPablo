@@ -14,6 +14,8 @@
 
 header .sectionUno {
   background-color: #000000; }
+  header .sectionUno div p {
+    font-size: 0.8rem; }
 
 header .sectionDos {
   background-color: #009929; }
@@ -87,6 +89,10 @@ footer {
     font-size: 1.5rem; }
   #bodyIndex main .descrip p {
     font-size: 1.2rem; }
+  #bodyIndex main section b {
+    font-size: 1.5rem; }
+  #bodyIndex main section p {
+    font-size: 1.2rem; }
 
 @media (min-width: 1200px) {
   main .pad {
@@ -115,20 +121,25 @@ footer {
   #bodyNosotros header {
     background-image: url(../assets/images/Nosotros/nosotros576.jpeg); } }
 
-#bodyBeneficios header {
-  background-image: url(../assets/images/beneficios/beneficios.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
 #bodyBeneficios main div div img {
   height: 200px;
   width: auto; }
 
-#bodyBeneficios main div div h5 {
-  padding-top: 30px; }
-
 #bodyBeneficios main div iframe {
   padding-bottom: 40px; }
+
+#bodyBeneficios main div .boton a {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #009929;
+  transition: all 1s; }
+  #bodyBeneficios main div .boton a:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    width: 160px;
+    height: 60px;
+    margin: -10px; }
 
 #bodyProductos header {
   background-image: url(../assets/images/Productos/productos.png);
@@ -139,12 +150,12 @@ footer {
   border-radius: 25px !important; }
 
 .btn-primary {
-  --bs-btn-bg: #479847 !important;
-  --bs-btn-border-color: #479847 !important;
-  --bs-btn-hover-bg: #aaaaaa !important;
-  --bs-btn-hover-border-color: #aaaaaa !important;
-  --bs-btn-active-bg: #aaaaaa !important;
-  --bs-btn-active-border-color: #aaaaaa !important; }
+  --bs-btn-bg: #009929 !important;
+  --bs-btn-border-color: #009929 !important;
+  --bs-btn-hover-bg: #dcdcdc !important;
+  --bs-btn-hover-border-color: #dcdcdc !important;
+  --bs-btn-active-bg: #dcdcdc !important;
+  --bs-btn-active-border-color: #dcdcdc !important; }
 
 #bodyContacto header {
   background-image: url(../assets/images/contacto/contacto.png);
@@ -190,3 +201,6 @@ footer {
 
 .bg-verdemedio {
   background-color: #009929; }
+
+.posh1 {
+  top: -1000px; }

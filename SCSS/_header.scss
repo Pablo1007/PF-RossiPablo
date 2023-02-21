@@ -1,6 +1,11 @@
 header{
     .sectionUno{
         background-color: $negro;
+        div{
+            p{
+                font-size: 0.8rem;
+            }
+        }
     }
     .sectionDos{
         background-color: $verde-medio;
