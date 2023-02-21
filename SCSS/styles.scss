@@ -13,10 +13,11 @@
     margin: 0;
 }
 
-// logo whatsapp flotante en todas las web
+.py-7{
+    padding: 7rem 0rem;
 
-.wFlotante{
-    &:hover {
-    background: radial-gradient(circle, rgba(125, 255, 125, 1) 0%, rgba(125, 255, 125, 0.5) 60%, rgba(125, 255, 125, 0) 90%);
-    }
+}
+
+.bg-verdemedio{
+    background-color: $verde-medio
 }

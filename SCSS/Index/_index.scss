@@ -1,32 +1,48 @@
 #bodyIndex{
-    background-image: url(../assets/images/Fondos/fondo_index.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
     main{
+        background-image: url(../assets/images/Fondos/fondo_index.png);
+        background-size: 100%;
+        background-repeat: no-repeat;   
         div{
-            .boton{
-                a {
-                    width: 140px;
-                    height: 40px;
-                    border-radius: 10px;
-                    background-color: rgba(255, 255, 255, 0.651);
-                    transition: all 1s;
-                    &:hover{
-                        background-color: rgba(0, 0, 0, 0.466);
-                        color: white;
-                        width: 160px;
-                        height: 60px;
-                        margin: -10px;
+            .divUno{
+            background-color: rgba(255, 255, 255, 0.651);
+            width: 80vw;
+            border-radius: 30px;
+                .pUno{
+                    font-size: 1.5rem !important;
+                }
+                .pDos{
+                    font-size: 1.2rem !important;
+                    padding-bottom: 40px;
+                }
+                .boton{
+                    a {
+                        width: 140px;
+                        height: 40px;
+                        border-radius: 10px;
+                        background-color: $verde-medio;
+                        transition: all 1s;
+                        &:hover{
+                            background-color: rgba(0, 0, 0, 0.466);
+                            color: white;
+                            width: 160px;
+                            height: 60px;
+                            margin: -10px;
+                        }
                     }
                 }
             }
-            
         }
-        div{
-            div{
-                p{
-                    font-size: 1rem;
-                }
+        .servicios{
+            background-color: rgba(255, 255, 255, 0.236);
+            border-radius: 30px;
+        }
+        .descrip{
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.2rem;
             }
         }
     }
@@ -45,14 +61,16 @@
 
 @media (max-width: 767px) {
     #bodyIndex{
+        main{            
         background-image: url(../assets/images/Fondos/fondo_index_768.jpg);
+        }
     }
 }
 
 @media (max-width: 576px) {
     #bodyIndex {
-        background-image: url(../assets/images/Fondos/fondo_index_576.jpg) !important;
         main{
+            background-image: url(../assets/images/Fondos/fondo_index_576.jpg) !important;
             div{
                 h5{
                     font-size: 0.75rem !important;
