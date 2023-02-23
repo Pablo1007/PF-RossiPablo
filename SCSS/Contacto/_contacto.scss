@@ -1,25 +1,17 @@
 #bodyContacto{
-    header{
-    background-image: url(../assets/images/contacto/contacto.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    }
     main{
-
         div{
             div{
                 div{
                     div{
                     img{
-                            height: 150px;
-                            width: auto;
+                        @include sizes(auto, 150px);
                         }
                     }
                     div{
                         h4{
-                            padding-left: 10px;
-                            padding-right: 10px;
-                            height: 1.5rem;
+                            padding: 0px 10px;
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -29,11 +21,6 @@
 }
 
 @media (max-width: 576px) {
-    #bodyContacto{
-        header{
-        background-image: url(../assets/images/contacto/contacto576.png);
-        }
-    }
     .bajarForm {
         flex-direction: column;
     }

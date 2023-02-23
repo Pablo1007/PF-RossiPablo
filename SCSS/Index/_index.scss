@@ -1,9 +1,9 @@
 #bodyIndex{
     main{
-        background-image: url(../assets/images/Fondos/fondo_index.png);
-        background-size: 100%;
-        background-repeat: no-repeat;   
-        div{
+        .divDos{
+            background-image: url(../assets/images/Fondos/fondo_index2.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
             .divUno{
             background-color: rgba(255, 255, 255, 0.651);
             width: 80vw;
@@ -15,18 +15,16 @@
                     font-size: 1.2rem !important;
                     padding-bottom: 40px;
                 }
-                .boton{
-                    a {
-                        width: 140px;
-                        height: 40px;
+                div{
+                    .boton{
+                        @include sizes(140px,40px);
                         border-radius: 10px;
                         background-color: $verde-medio;
                         transition: all 1s;
                         &:hover{
                             background-color: rgba(0, 0, 0, 0.466);
                             color: white;
-                            width: 160px;
-                            height: 60px;
+                            @include sizes(160px,60px);
                             margin: -10px;
                         }
                     }
@@ -39,38 +37,37 @@
         }
         .descrip{
             h3{
+                // @include text(1.5rem,black);
                 font-size: 1.5rem;
             }
             p{
+                // @include text(1.2rem,black);
                 font-size: 1.2rem;
             }
         }
         section{
             b{
-                font-size: 1.5rem;
+                @include text(1.5rem,black);
             }
             p{
-                font-size: 1.2rem;
+                @include text(1.2rem,black);
             }
         }
     }
 }
 
-@media (min-width: 1200px) {
-    main{
-        .pad{
-            padding: 100px 0px;
-            div{
-                padding: 100px 0px;
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
+@media (min-width: 992px) {
     #bodyIndex{
-        main{            
-        background-image: url(../assets/images/Fondos/fondo_index_768.jpg);
+        main{
+            .divDos{
+                background-size: 100% auto !important;
+            }
+            .pad{
+                padding: 100px 0px;
+                div{
+                    padding: 100px 0px;
+                }
+            }
         }
     }
 }
@@ -78,7 +75,6 @@
 @media (max-width: 576px) {
     #bodyIndex {
         main{
-            background-image: url(../assets/images/Fondos/fondo_index_576.jpg) !important;
             div{
                 h5{
                     font-size: 0.75rem !important;

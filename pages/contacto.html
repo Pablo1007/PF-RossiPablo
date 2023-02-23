@@ -118,7 +118,6 @@
             </div>
         </div>
 
-
         <div class="row">
 
             <!-- informacion general -->
@@ -132,7 +131,7 @@
                         <img src="../assets/images/contacto/Destino.png" alt="Simbolo de destino">
                     </div>
                     <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
-                        <p class="h4 roboto">San Luis 4335, Santa Fe, Rosario</p>
+                        <p class="h4 roboto">San Luis 4335, Santa Fe, Rosario.</p>
                     </div>
                 </div>
 
@@ -140,7 +139,7 @@
 
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center seg">
-                        <p class="h4 roboto">Se coordina sin cargo dentro de rosario</p>
+                        <p class="h4 roboto">Se coordina sin cargo dentro de Rosario.</p>
                     </div>
                     <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center pri">
                         <img src="../assets/images/contacto/Envio.png" alt="Simbolo de envio">
@@ -154,7 +153,7 @@
                         <img src="../assets/images/contacto/Horarios.png" alt="Simbolo de horario">
                     </div>
                     <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
-                        <p class="h4 roboto">Lunes a viernes de 8:00 a 17:00</p>
+                        <p class="h4 roboto">Lunes a viernes de 8:00 a 17:00 hs.</p>
                     </div>
                 </div>
                 
@@ -162,7 +161,7 @@
 
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center seg">
-                        <p class="h4 roboto">341-5698981 Ing Pablo Rossi</p>
+                        <p class="h4 roboto">341-5698981 Ing. Pablo Rossi</p>
                     </div>
                     <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center pri">
                         <img src="../assets/images/contacto/Whatsapp.png" alt="Simbolo de whatsapp">
@@ -180,44 +179,51 @@
                             <!-- Nombre y apellido -->
 
                             <div class="mb-3 text-white">
-                                <label for="nombre" class="form-label">Nombre y apellido</label>
-                                <div class="d-flex bajarForm">
-                                    <input type="text" class="form-control me-2 " id="nombre" placeholder="Nombre">
+                                
+                                <label for="nombre" class="form-label text-black">Nombre y apellido:</label>
+                                
+                                <div class="d-flex bajarForm p-0 mb-3 pt-2">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                                     <input type="text" class="form-control" id="apellido" placeholder="Apellido">
                                 </div>
 
                                 <!-- correo -->
+                                
+                                <label for="correo" class="form-label text-black">Correo:</label>
+                                <div class="p-0 mb-3 pt-2">
+                                    <input type="email" class="form-control" id="correo" placeholder="Correo">
+                                </div>
+                                
+                                <!-- telefono -->
 
-                                <div class="pt-2 mb-3">
-                                    <label for="correo" class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="coreeo">
+                                <label for="area" class="form-label text-black">Teléfono:</label>                               
+                                <div class="p-0 mb-3 pt-2">
+                                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                                </div>
 
-                                    <!-- telefono -->
-
-                                    <div class="container-fluid p-0 mb-3 pt-2">
-                                        <label for="area" class="form-label">Telefono</label>
-                                                <input type="tel" class="form-control" id="telefono" placeholder="Telefono">
-                                        </div>
-                                    </div>
+                                <label for="formFileMultiple" class="form-label text text-black">Factura de electricidad:</label>
+                                <div class="p-0 mb-3 pt-2">
+                                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                  </div>
+                                    
 
                                     <!-- quiero que me llamen -->
 
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Quiero que me llamen</label>
-                                    </div>
+                                <div class="p-0 mb-3 pt-2form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-black" for="exampleCheck1">Quiero que me llamen.</label>
+                                </div>
 
                                     <!-- espacio para escribir consulta -->
 
-                                    <div class="row d-flex justify-content-center">
-                                        <textarea class="col-10  border rounded border-5 form-control" rows="10"></textarea>
-                                    </div>
+                                <div class="row d-flex justify-content-center">
+                                    <textarea class="col-10 border rounded border-5 form-control" rows="10"></textarea>
+                                </div>
 
                                     <!-- boron de enviar -->
 
-                                    <div class="row pt-4">
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </div>
+                                <div class="row pt-4">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                 </div>
                             </div>
                         </div>
