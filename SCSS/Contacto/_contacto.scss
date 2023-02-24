@@ -1,15 +1,16 @@
-#bodyContacto{
-    main{
-        div{
-            div{
-                div{
-                    div{
-                    img{
-                        @include sizes(auto, 150px);
+#bodyContacto {
+    main {
+        div {
+            div {
+                div {
+                    div {
+                        img {
+                            @include sizes(auto, 150px);
                         }
                     }
-                    div{
-                        h4{
+
+                    div {
+                        h4 {
                             padding: 0px 10px;
                             font-size: 1.5rem;
                         }
@@ -27,25 +28,30 @@
 }
 
 @media (max-width: 992px) {
-    #bodyContacto{
-        main{
+    #bodyContacto {
+        main {
             padding: 0px 0px 20px 0px;
-            div{
-                div{
-                    div{
+
+            div {
+                div {
+                    div {
                         flex-direction: column;
-                        .pri{
+
+                        .pri {
                             order: 1;
                         }
-                        .seg{
+
+                        .seg {
                             order: 2;
-                            h4{
+
+                            h4 {
                                 text-align: center;
                                 padding-bottom: 10px;
                             }
                         }
-                        div{
-                            img{
+
+                        div {
+                            img {
                                 margin: 15px 0px;
                             }
                         }

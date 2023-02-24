@@ -1,17 +1,19 @@
 footer {
     background-color: $negro !important;
+
     div {
-        div{
-            ul{
-                li{
-                    a{
-                        &:hover{
-                        color: $verde-medio !important;
+        div {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $verde-claro !important;
                         }
                     }
                 }
             }
-             hr{
+
+            hr {
                 margin-top: 0 !important;
             }
         }

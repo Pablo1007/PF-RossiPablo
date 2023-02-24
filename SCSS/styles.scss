@@ -1,10 +1,10 @@
 @import "./variables";
 @import "./tipografias";
+@import "./animaciones";
 @import "./mixin";
 @import "./header";
 @import "./footer";
 @import "./Index/index.scss";
-@import "./Nosotros/nosotros.scss";
 @import "./Beneficios/beneficios.scss";
 @import "./Productos/productos.scss";
 @import "./Contacto/contacto";
@@ -25,4 +25,14 @@
 
 .posh1{
     top: -1000px;
+}
+
+.agrandado{
+    &:hover{
+        @include sizes(auto,100px);
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 15px 15px $gris;
+        -webkit-box-shadow: 0px 0px 15px 15px $gris;
+    }
 }

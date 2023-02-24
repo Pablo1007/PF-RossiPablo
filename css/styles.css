@@ -12,6 +12,18 @@
 .bee {
   font-family: "bee"; }
 
+@keyframes slideright {
+  from {
+    margin-left: 300%; }
+  to {
+    margin-left: 0%; } }
+
+@keyframes slideleft {
+  from {
+    margin-right: 300%; }
+  to {
+    margin-right: 0%; } }
+
 header .sectionUno {
   background-color: #000000; }
   header .sectionUno div p {
@@ -53,7 +65,7 @@ header .sectionDos {
 footer {
   background-color: #000000 !important; }
   footer div div ul li a:hover {
-    color: #009929 !important; }
+    color: #5ccb5f !important; }
   footer div div hr {
     margin-top: 0 !important; }
 
@@ -66,18 +78,24 @@ footer {
     width: 80vw;
     border-radius: 30px; }
     #bodyIndex main .divDos .divUno .pUno {
-      font-size: 1.5rem !important; }
+      font-size: 1.5rem !important;
+      animation-name: slideright;
+      animation-duration: 3s; }
     #bodyIndex main .divDos .divUno .pDos {
       font-size: 1.2rem !important;
-      padding-bottom: 40px; }
+      padding-bottom: 40px;
+      animation-name: slideleft;
+      animation-duration: 4s; }
     #bodyIndex main .divDos .divUno div .boton {
       width: 140px;
       height: 40px;
       border-radius: 10px;
       background-color: #009929;
-      transition: all 1s; }
+      transition: all 1s;
+      animation-name: slideright;
+      animation-duration: 5s; }
       #bodyIndex main .divDos .divUno div .boton:hover {
-        background-color: rgba(0, 0, 0, 0.466);
+        background-color: #006414;
         color: white;
         width: 160px;
         height: 60px;
@@ -87,11 +105,22 @@ footer {
   background-color: rgba(255, 255, 255, 0.236);
   border-radius: 30px; }
 
-#bodyIndex main .descrip h3 {
-  font-size: 1.5rem; }
+#bodyIndex main .descrip .descripTexto, #bodyIndex main .descrip .descripTexto--verde {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0;
+  text-align: center;
+  padding-top: 1.5rem; }
+
+#bodyIndex main .descrip .descripTexto--verde {
+  background-color: #009929;
+  font-size: 1.5rem;
+  color: white; }
 
 #bodyIndex main .descrip p {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: black;
+  text-align: center; }
 
 #bodyIndex main section b {
   font-size: 1.5rem;
@@ -100,6 +129,14 @@ footer {
 #bodyIndex main section p {
   font-size: 1.2rem;
   color: black; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem !important;
+  height: 4rem !important;
+  background-size: 200% 200% !important; }
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: .8 !important; }
 
 @media (min-width: 992px) {
   #bodyIndex main .divDos {
@@ -129,7 +166,7 @@ footer {
   background-color: #009929;
   transition: all 1s; }
   #bodyBeneficios main div div .boton:hover {
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: #006414;
     color: white;
     width: 160px;
     height: 60px;
@@ -185,3 +222,11 @@ footer {
 
 .posh1 {
   top: -1000px; }
+
+.agrandado:hover {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #dcdcdc;
+  -webkit-box-shadow: 0px 0px 15px 15px #dcdcdc; }
